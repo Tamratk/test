@@ -41,24 +41,30 @@ public class Database_initializer {
                     "isbn VARCHAR(20), " +
                     "available BOOLEAN)";
             statement.executeUpdate(member);*/
-            String author = "CREATE TABLE IF NOT EXISTS author (" +
+//            String author = "CREATE TABLE IF NOT EXISTS author (" +
+//                    "id INT AUTO_INCREMENT PRIMARY KEY, " +
+//                    "title VARCHAR(100), " +
+//                    "author VARCHAR(100), " +
+//                    "isbn VARCHAR(20), " +
+//                    "available BOOLEAN)";
+//            statement.executeUpdate(author);
+
+            String writer = "CREATE TABLE IF NOT EXISTS writer (" +
                     "id INT AUTO_INCREMENT PRIMARY KEY, " +
                     "title VARCHAR(100), " +
                     "author VARCHAR(100), " +
                     "isbn VARCHAR(20), " +
                     "available BOOLEAN)";
-            statement.executeUpdate(author);
+           statement.executeUpdate(writer);
 
 
-
-
-            String con = "CREATE TABLE IF NOT EXISTS con (" +
-                    "id INT AUTO_INCREMENT PRIMARY KEY, " +
-                    "title VARCHAR(100), " +
-                    "author VARCHAR(100), " +
-                    "isbn VARCHAR(20), " +
-                    "available BOOLEAN)";
-            statement.executeUpdate(con);
+//            String con = "CREATE TABLE IF NOT EXISTS con (" +
+//                    "id INT AUTO_INCREMENT PRIMARY KEY, " +
+//                    "title VARCHAR(100), " +
+//                    "author VARCHAR(100), " +
+//                    "isbn VARCHAR(20), " +
+//                    "available BOOLEAN)";
+//            statement.executeUpdate(con);
 
 
             System.out.println("Database created or already exists.");
